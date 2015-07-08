@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>TinyMessenger</id>
+    <version>1.0.1</version>
+    <title>TinyMessenger</title>
+    <authors>Steven Robbins</authors>
+    <owners>Steven Robbins</owners>
+    <licenseUrl>http://gitlab.certegyezipay.com.au/ccp</licenseUrl>
+    <projectUrl>https://github.com/Maverix/TinyMessenger</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple messenger/event aggregator.</description>
+    <releaseNotes>
+      Customised Version
+    </releaseNotes>
+    <copyright>Copyright Steven Robbins 2015</copyright>
+    <tags>Certegy CCP</tags>
+  </metadata>
+</package>
