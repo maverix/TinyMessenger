@@ -1,36 +1,40 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMessenger", "TinyMessenger\TinyMessenger.csproj", "{DE0CA005-3B06-4751-9429-9671E7916492}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMessenger", "TinyMessenger\TinyMessenger.csproj", "{5BA3916E-B19B-4AC9-9831-E5CBD77F7551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMessenger.Tests", "TinyMessenger.Tests\TinyMessenger.Tests.csproj", "{40D73D7C-262F-40C9-86F4-15DCB55B2946}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMessenger.Tests", "TinyMessenger.Tests\TinyMessenger.Tests.csproj", "{04963891-D0DD-4E47-B7AE-DD9987786BD8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4531D28-B1A5-43F8-90B3-5A675D02D11E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7FD0D8C0-C8E4-477E-AC80-2914EA82F4D4}"
 	ProjectSection(SolutionItems) = preProject
-		Local.testsettings = Local.testsettings
-		TinyMessenger.vsmdi = TinyMessenger.vsmdi
-		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = TinyMessenger.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DE0CA005-3B06-4751-9429-9671E7916492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE0CA005-3B06-4751-9429-9671E7916492}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE0CA005-3B06-4751-9429-9671E7916492}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE0CA005-3B06-4751-9429-9671E7916492}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40D73D7C-262F-40C9-86F4-15DCB55B2946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40D73D7C-262F-40C9-86F4-15DCB55B2946}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40D73D7C-262F-40C9-86F4-15DCB55B2946}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40D73D7C-262F-40C9-86F4-15DCB55B2946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BA3916E-B19B-4AC9-9831-E5CBD77F7551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA3916E-B19B-4AC9-9831-E5CBD77F7551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA3916E-B19B-4AC9-9831-E5CBD77F7551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA3916E-B19B-4AC9-9831-E5CBD77F7551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04963891-D0DD-4E47-B7AE-DD9987786BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04963891-D0DD-4E47-B7AE-DD9987786BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04963891-D0DD-4E47-B7AE-DD9987786BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04963891-D0DD-4E47-B7AE-DD9987786BD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TinyMessenger.vsmdi
 	EndGlobalSection
 EndGlobal
