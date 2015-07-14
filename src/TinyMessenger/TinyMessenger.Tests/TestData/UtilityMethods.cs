@@ -20,7 +20,7 @@ using TinyMessenger;
 
 namespace TinyMessenger.Tests.TestData {
     public class UtilityMethods {
-        public static ITinyMessengerHub GetMessenger() {
+        public static IHub GetMessenger() {
             return new TinyMessengerHub();
         }
 

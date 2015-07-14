@@ -79,7 +79,7 @@ namespace TinyMessenger {
         /// <summary>
         /// Initializes a new instance of the TinyMessageSubscriptionToken class.
         /// </summary>
-        public TinyMessageSubscriptionToken(ITinyMessengerHub hub, Type messageType) {
+        public TinyMessageSubscriptionToken(IHub hub, Type messageType) {
             if (hub == null)
                 throw new ArgumentNullException("hub");
 
@@ -89,10 +89,10 @@ namespace TinyMessenger {
 
         public void Dispose() {
             if (_Hub.IsAlive) {
-                var hub = _Hub.Target as ITinyMessengerHub;
+                var hub = _Hub.Target as IHub;
 
                 if (hub != null) {
-                    var unsubscribeMethod = typeof(ITinyMessengerHub).GetTypeInfo().GetDeclaredMethod("Unsubscribe");
+                    var unsubscribeMethod = typeof(IHub).GetTypeInfo().GetDeclaredMethod("Unsubscribe");
                     unsubscribeMethod = unsubscribeMethod.MakeGenericMethod(_MessageType);
                     unsubscribeMethod.Invoke(hub, new object[] { this });
                 }
@@ -187,7 +187,7 @@ namespace TinyMessenger {
     /// <summary>
     /// Messenger hub responsible for taking subscriptions/publications and delivering of messages.
     /// </summary>
-    public interface ITinyMessengerHub {
+    public interface IHub {
         /// <summary>
         /// Subscribe to a message type with the given destination and delivery action.
         /// All references are held with WeakReferences
@@ -323,7 +323,7 @@ namespace TinyMessenger {
     /// <summary>
     /// Messenger hub responsible for taking subscriptions/publications and delivering of messages.
     /// </summary>
-    public sealed class TinyMessengerHub : ITinyMessengerHub {
+    public sealed class TinyMessengerHub : IHub {
         #region Private Types and Interfaces
         private class WeakTinyMessageSubscription<TMessage> : ITinyMessageSubscription
             where TMessage : class {
